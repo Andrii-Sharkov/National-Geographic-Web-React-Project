@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header-component';
+import Hero from './components/hero-component/index';
+import Photos from './components/photos-components';
+import PhotosTwo from './components/photos-two-component';
+import ShortInfo from './components/short-info-component';
+import ShowCase from './components/showcase-component';
+import SocialLinks from './components/social-links-component';
+import Underwater from './components/underwater-component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">     
+          <Header />
+          <Hero />
+          <ShortInfo />
+          <Photos />
+          <ShowCase />
+          <PhotosTwo />
+          <Underwater />
+          <SocialLinks />
+      </div> 
   );
 }
 
